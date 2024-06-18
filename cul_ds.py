@@ -1,15 +1,15 @@
 import openpyxl as xl
-import datetime  
+from datetime import datetime as dt, timedelta as td 
+
 
 RA = input('digite o seu RA: ')
 livro = input('digite o livro que deseja retirar: ')
 categoria = input('digite a categoria do livro: ')
-data = datetime.date.today()
-data_entrega_temp = 0
-data_entrega_temp.append(data.replace()) 
-data_entrega = data_entrega_temp
 responsavel = input('digite o nome do responsavel: ')
 
 
-print(data)
+data_retirada = dt.now().date()
+data_entrega = data_retirada + td(days= 20)
+
+print(data_retirada)
 print(data_entrega)
