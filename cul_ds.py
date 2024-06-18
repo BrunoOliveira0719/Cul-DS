@@ -13,5 +13,3 @@ responsavel = input('digite o nome do responsavel: ')
 
 print(data)
 print(data_entrega)
-
-
